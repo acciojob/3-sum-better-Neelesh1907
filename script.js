@@ -1,7 +1,8 @@
 function threeSum(arr, target) {
 // write your code here
+	arr.sort((a,b)=>a-b);
 	let minDiff=0,c,d,e;
-	for(let i=0;i<ar.length;i++){
+	for(let i=0;i<arr.length;i++){
 		if(i>0 && arr[i]===arr[i-1]){
 			continue;
 		}
@@ -16,11 +17,15 @@ function threeSum(arr, target) {
 			  e=ar[k];
 			  minDiff=diff; 
 		   }
-		   j++;
-		   k--;
+		   if(x<target){
+			   j++;
+		   }
+		   else{
+		       k--;	
+		  }	
 		}
 	}
-	return c,d,e;
+	return (c+d+e);
 }
 
 module.exports = threeSum;
