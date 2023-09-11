@@ -14,6 +14,7 @@ function threeSum(arr, target) {
 			  c=ar[i];
 			  d=ar[j];
 			  e=ar[k];
+			  minDiff=diff; 
 		   }
 		   j++;
 		   k--;
