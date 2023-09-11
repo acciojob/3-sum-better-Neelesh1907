@@ -2,7 +2,7 @@ function threeSum(arr, target) {
 // write your code here
 	arr.sort((a,b)=>a-b);
 	let minDiff=0,c,d,e;
-	for(let i=0;i<arr.length;i++){
+	for(let i=0;i<arr.length-2;i++){
 		if(i>0 && arr[i]===arr[i-1]){
 			continue;
 		}
