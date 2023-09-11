@@ -12,9 +12,9 @@ function threeSum(arr, target) {
 		   let x = arr[i]+arr[j]+arr[k];
 		   diff = x>target?(x-target):(target-x);
 		   if(minDiff>diff){
-			  c=ar[i];
-			  d=ar[j];
-			  e=ar[k];
+			  c=arr[i];
+			  d=arr[j];
+			  e=arr[k];
 			  minDiff=diff; 
 		   }
 		   if(x<target){
